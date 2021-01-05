@@ -2,11 +2,10 @@
 
 namespace App;
 
-
 use Illuminate\Database\Eloquent\Model;
 
-class Class_ extends Model
-{
+class Class_ extends Model {
+
     protected $table = 'classes';
 
     /**

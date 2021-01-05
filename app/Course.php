@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Course extends Model
-{
+class Course extends Model {
+
     /**
      * 建立一对多关联 任课老师
      *

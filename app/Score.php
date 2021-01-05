@@ -4,11 +4,19 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Score extends Model
-{
+class Score extends Model {
+
     protected $table = 'scores';
 
-    protected $fillable = ['class_id', 'student_id', 'course_id', 'type', 'score', 'credit', 'remark'];
+    protected $fillable = [
+        'class_id',
+        'student_id',
+        'course_id',
+        'type',
+        'score',
+        'credit',
+        'remark'
+    ];
 
     public function student()
     {

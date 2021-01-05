@@ -15,7 +15,7 @@ class AuthController extends Controller {
     public function login(Request $request)
     {
         $this->validate($request, [
-            'id'       => 'required|digits:8',
+            'id'       => 'required',
             'password' => 'required|min:6',
             'identity' => [
                 'required',
@@ -26,7 +26,6 @@ class AuthController extends Controller {
             ]
         ], [
             'id.required'       => '教师号或学号是必须的',
-            'id.digits'         => '教师号或学号只能是8位数',
             'password.required' => '密码是必须的',
             'password.min'      => '密码最短是6位',
             'identity.min'      => '身份是必须勾选',

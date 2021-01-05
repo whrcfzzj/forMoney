@@ -5,7 +5,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{config('app.name')}}</title>
-    <link rel="stylesheet" href="../../public/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url('/vendor/bootstrap/css/bootstrap.min.css')}}">
     <style>
         body {
             background: rgb(43, 49, 55);
@@ -101,7 +101,7 @@
     <br>
 </div>
 
-<script src="../../public/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="../../public/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="{{url('/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{url('/vendor/jquery/jquery-3.4.1.min.js')}}"></script>
 </body>
 </html>
