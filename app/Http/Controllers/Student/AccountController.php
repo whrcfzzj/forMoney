@@ -62,6 +62,6 @@ class AccountController extends Controller
 
         Auth::guard('student')->logout();
 
-        return redirect()->route('student');
+        return redirect()->route('login');
     }
 }

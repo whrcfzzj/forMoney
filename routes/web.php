@@ -30,7 +30,7 @@ Route::group(['middleware' => 'web'], function() {
     # 教师
     Route::group([
         'prefix'     => 'teacher',
-        'middleware' => 'teacher.auth',
+        //        'middleware' => 'teacher.auth',
         'namespace'  => 'Teacher'
     ], function() {
         Route::get('/', 'IndexController@showCourseTable')->name('teacher');
@@ -46,7 +46,7 @@ Route::group(['middleware' => 'web'], function() {
     #学生
     Route::group([
         'prefix'     => 'student',
-        'middleware' => 'student.auth',
+        //        'middleware' => 'student.auth',
         'namespace'  => 'Student'
     ], function() {
         Route::get('/', 'IndexController@courses')->name('student');

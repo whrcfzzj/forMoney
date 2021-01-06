@@ -50,7 +50,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">密码</label>
-                            <input type="password"
+                            <input type="text"
                                    class="form-control @if($errors->has('password')) is-invalid @endif"
                                    name="password" placeholder="请输入密码" value="{{old('password')}}">
                             @if($errors->has('password'))
@@ -58,7 +58,7 @@
                                     <p class="invalid-feedback">{{$message}}</p>
                                 @endforeach
                             @endif
-                            <small class="form-text text-muted">学生初始密码为身份证后6位，教师初始密码为'123456'，登录后可自行更改</small>
+                            <small class="form-text text-muted">学生、教师初始密码为'123456'，登录后可自行更改</small>
                         </div>
                         <div class="form-inline">
                             <div class="form-check">

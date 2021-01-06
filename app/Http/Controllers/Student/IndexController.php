@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Student;
 
-use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\JoinClause;
 use Illuminate\Http\Request;
@@ -16,10 +15,8 @@ class IndexController extends Controller
     {
         $year = $request->get('year');
         $semester = $request->get('semester');
-
-        $class_courses = Auth:: guard('student')->user()
-            ->class_->classCourses()
-            ->where(function (\Illuminate\Database\Eloquent\Builder $builder) use ($year, $semester) {
+        $class_courses = Auth::guard('student')->user()->class_->classCourses()
+            ->where(function(\Illuminate\Database\Eloquent\Builder $builder) use ($year, $semester) {
                 if ($year) {
                     $builder->where('year', $year);
                 }
