@@ -50,7 +50,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">密码</label>
-                            <input type="text"
+                            <input type="password"
                                    class="form-control @if($errors->has('password')) is-invalid @endif"
                                    name="password" placeholder="请输入密码" value="{{old('password')}}">
                             @if($errors->has('password'))

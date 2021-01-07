@@ -161,6 +161,7 @@
                                 <th scope="col">学年</th>
                                 <th scope="col">学期</th>
                                 <th scope="col">类型</th>
+                                <th scope="col">学科</th>
                                 <th scope="col">成绩</th>
                                 <th scope="col">学分</th>
                                 <th scope="col">备注</th>
@@ -176,6 +177,7 @@
                                     <td>{{$score->year}}</td>
                                     <td>{{$score->semester}}</td>
                                     <td>{{$score->type}}</td>
+                                    <td>{{$score->course->name}}</td>
                                     <td>{{$score->score}}</td>
                                     <td>{{$score->credit}}</td>
                                     <td>{{$score->remark}}</td>
